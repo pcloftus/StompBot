@@ -1,0 +1,12 @@
+void searchClearDriver();
+void searchRun();
+void searchIterate();
+int searchWiden(int depth, int val);
+int searchRoot(uint8_t depth, int alpha, int beta);
+int Search(uint8_t depth, uint8_t ply, int alpha, int beta, int is_pv);
+int PV(int val);
+void setKillers(Move m, uint8_t ply);
+void sortKillers(Move *m, uint8_t mcount, uint8_t ply);
+void ageHistoryTable();
+int drawScore();
+bool isRepetition();
